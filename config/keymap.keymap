@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 / {
     combos {
@@ -43,7 +44,7 @@
 &trans  &kp N1  &kp N2  &kp N3  &trans  &trans                           &trans          &trans         &trans            &trans             &trans         &trans
 &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans           &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
 &trans  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans           &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &to 1   &lt 0 RC(SPACE)  &to 3   &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &to 1   &lt 0 LC(SPACE)  &to 3   &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
             >;
         };
 
@@ -68,3 +69,12 @@
         };
     };
 };
+
+&pointing_listener {
+    scroller {
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>,
+                           <&zip_scroll_scaler 1 16>;
+    };
+};
+
