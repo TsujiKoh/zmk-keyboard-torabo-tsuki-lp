@@ -32,7 +32,7 @@
         layer_1 {
             bindings = <
 &trans     &trans  &trans    &trans  &trans  &trans                  &trans     &kp F1   &kp F2   &kp F3   &trans  &trans
-&trans     &trans  &trans    &trans  &trans  &trans                  &trans     &kp F4   &kp F5   &kp F6   &trans  &kp RIGHT_BRACKET
+&trans     &trans  &trans    &trans  &trans  &trans                  &trans     &kp F4   &kp F5   &kp F6   &trans  &trans
 &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &kp F7   &kp F8   &kp F9   &trans  &trans
 &kp LSHFT  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &kp F10  &kp F11  &kp F12  &trans  &trans
 &kp LCTRL  &trans  &kp LALT  &trans  &trans  &to 0   &to 2   &to 3   &kp ENTER  &trans   &trans   &trans   &trans  &trans
@@ -61,8 +61,8 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp DEL
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp RIGHT_BRACKET
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
