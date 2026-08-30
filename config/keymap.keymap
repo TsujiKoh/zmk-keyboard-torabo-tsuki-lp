@@ -61,11 +61,11 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp DEL
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp RIGHT_BRACKET
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none   &none   &none   &none  &none  &none                &none  &none  &none  &none  &none  &kp DEL
+&none   &none   &none   &none  &none  &none                &none  &none  &none  &none  &none  &kp RIGHT_BRACKET
+&none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&trans  &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&trans  &trans  &trans  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
